@@ -1,0 +1,119 @@
+/* Zerar margens e configurar box-sizing */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definir fonte e cores básicas do corpo */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Estilos para o header */
+header {
+    background-color: #ffcc00;
+    color: white;
+    text-align: center;
+    padding: 1rem; /* Reduzir a altura do header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem; /* Ajuste do tamanho da fonte */
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para o menu de navegação */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff5722;
+}
+
+/* Seção de jogos */
+.game-section {
+    margin: 2rem 0;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.game-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ff5722;
+    text-shadow: 2px 2px #fff176;
+}
+
+/* Grade de jogos (imagens) */
+.game-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Permitir que os jogos fiquem na horizontal e quebrem em linhas, se necessário */
+}
+
+/* Itens de jogos */
+.game-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+
+.game-item:hover {
+    transform: scale(1.1);
+}
+
+.game-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 2px solid #4CAF50;
+}
+
+/* Texto dentro dos quadrados de jogos */
+.game-item p {
+    margin: 0;
+    padding: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Estilos para o footer */
+footer {
+    position: fixed; /* Fixar o footer na parte inferior da tela */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #ff5722;
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1rem;
+}
