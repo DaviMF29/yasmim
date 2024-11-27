@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Zerar margens e configurar box-sizing */
 body {
     margin: 0;
@@ -117,3 +123,27 @@ footer {
 footer p {
     font-size: 1rem;
 }
+
+@media (max-width: 768px) {
+    .game-grid {
+        display: flex; /* Alterar para flex */
+        flex-direction: column; /* Itens em coluna */
+        align-items: center; /* Centralizar os itens horizontalmente */
+        gap: 1.5rem; /* Espaçamento entre os itens */
+        padding: 0 1rem; /* Adicionar espaçamento lateral */
+    }
+
+    .game-item {
+        width: 80%; /* Fazer os cards ocuparem 80% da largura da tela */
+        max-width: 300px; /* Limitar a largura máxima */
+    }
+
+    .game-section {
+        margin-bottom: 3rem; /* Espaçamento extra entre o último jogo e o footer */
+    }
+
+    footer{
+        position: relative; /* Remover a fixação do footer */
+    }
+}
+
